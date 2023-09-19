@@ -1,7 +1,7 @@
 <script>
   import Footer from "./lib/Footer.svelte";
   import Navbar from "./lib/Navbar.svelte";
-  import Counter from "./lib/Counter.svelte";
+  import Counter from "./lib/Counter/CounterDisplay.svelte";
   import TailwindCss from "./lib/TailwindCSS.svelte";
   import Adder from "./lib/Adder.svelte";
   import Answer from "./lib/Answer.svelte";
@@ -12,6 +12,7 @@
   import Input from "./lib/Input.svelte";
   import UglyCalculator from "./lib/UglyCalculator.svelte";
   import Spam from "./lib/Spam.svelte";
+  import Clock from "./lib/Clock.svelte";
 
   const pkg = {
     name: "svelte",
@@ -28,6 +29,9 @@
   <div class="hero min-h-screen bg-base-200">
     <div class="hero-content text-center">
       <div class="max-w-md">
+        <!-- <SvelteLogo /> -->
+        <Clock />
+
         <Answer />
         <Answer answer="42" />
         <PackageInfo {...pkg} />
